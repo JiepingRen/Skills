@@ -1,0 +1,60 @@
+{
+  "name": "默认周报模板",
+  "version": "1.0",
+  "fields": [
+    {
+      "key": "reporter",
+      "label": "汇报人",
+      "required": true,
+      "description": "销售人员姓名"
+    },
+    {
+      "key": "week_range",
+      "label": "周报周期",
+      "required": true,
+      "description": "起止日期，如 2026-04-13 ~ 2026-04-17"
+    },
+    {
+      "key": "visit_summary",
+      "label": "本周拜访概览",
+      "required": true,
+      "description": "拜访次数、客户列表、覆盖区域"
+    },
+    {
+      "key": "key_progress",
+      "label": "重点进展",
+      "required": true,
+      "description": "本周重要项目/客户的关键推进"
+    },
+    {
+      "key": "customer_feedback",
+      "label": "客户反馈汇总",
+      "required": false,
+      "description": "本周收集到的客户反馈和需求"
+    },
+    {
+      "key": "competitor_intel",
+      "label": "竞品动态",
+      "required": false,
+      "description": "本周获取的竞品信息"
+    },
+    {
+      "key": "issues",
+      "label": "问题与困难",
+      "required": false,
+      "description": "需要支持或协调的事项"
+    },
+    {
+      "key": "next_week_plan",
+      "label": "下周计划",
+      "required": true,
+      "description": "下周拜访计划、重点跟进客户、目标"
+    },
+    {
+      "key": "remarks",
+      "label": "备注",
+      "required": false,
+      "description": "其他需要说明的信息"
+    }
+  ]
+}

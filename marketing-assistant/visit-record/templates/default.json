@@ -1,0 +1,66 @@
+{
+  "name": "默认拜访记录模板",
+  "version": "1.0",
+  "fields": [
+    {
+      "key": "customer_name",
+      "label": "客户名称",
+      "required": true,
+      "description": "被拜访的客户/公司名称"
+    },
+    {
+      "key": "visit_date",
+      "label": "拜访时间",
+      "required": true,
+      "description": "拜访日期和时间"
+    },
+    {
+      "key": "visitor",
+      "label": "拜访人",
+      "required": true,
+      "description": "销售人员姓名"
+    },
+    {
+      "key": "contact_person",
+      "label": "客户对接人",
+      "required": false,
+      "description": "客户方对接人姓名及职位"
+    },
+    {
+      "key": "visit_purpose",
+      "label": "拜访目的",
+      "required": true,
+      "description": "本次拜访的目的和背景"
+    },
+    {
+      "key": "key_points",
+      "label": "沟通要点",
+      "required": true,
+      "description": "拜访中的核心讨论内容，按条目列出"
+    },
+    {
+      "key": "customer_feedback",
+      "label": "客户反馈",
+      "required": false,
+      "description": "客户的态度、意见、需求或顾虑"
+    },
+    {
+      "key": "competitors",
+      "label": "竞品信息",
+      "required": false,
+      "description": "提及的竞品或替代方案"
+    },
+    {
+      "key": "follow_up",
+      "label": "后续计划",
+      "required": true,
+      "description": "下一步行动项、负责人、预计时间"
+    },
+    {
+      "key": "remarks",
+      "label": "备注",
+      "required": false,
+      "description": "其他需要记录的信息"
+    }
+  ]
+}

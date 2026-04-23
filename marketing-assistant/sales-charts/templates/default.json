@@ -1,0 +1,85 @@
+{
+  "name": "默认销售数据图表模板",
+  "version": "1.0",
+  "description": "定义销售数据可视化报告包含的图表及其数据字段要求，数据源地址需通过环境变量配置",
+  "charts": [
+    {
+      "id": "kpi_cards",
+      "title": "核心KPI卡片",
+      "chart_type": "kpi_card",
+      "description": "顶部概览区，展示3~5个核心数字指标",
+      "metrics": [
+        {"key": "total_revenue", "label": "总销售额", "unit": "元", "compare": "环比"},
+        {"key": "revenue_growth", "label": "同比增长率", "unit": "%"},
+        {"key": "quota_completion", "label": "配额完成率", "unit": "%"},
+        {"key": "new_customers", "label": "新客户数", "unit": "个"},
+        {"key": "avg_deal_size", "label": "客单价", "unit": "元"}
+      ],
+      "data_source": null
+    },
+    {
+      "id": "revenue_trend",
+      "title": "销售额趋势",
+      "chart_type": "line",
+      "description": "按月/周展示销售额变化趋势，含同比对照线",
+      "x_axis": "时间（月/周）",
+      "y_axis": "销售额",
+      "series": ["本期销售额", "上期销售额", "目标值"],
+      "data_source": null
+    },
+    {
+      "id": "region_comparison",
+      "title": "区域业绩对比",
+      "chart_type": "bar",
+      "description": "按区域/团队对比销售业绩",
+      "x_axis": "区域/团队",
+      "y_axis": "销售额",
+      "series": ["实际", "目标"],
+      "data_source": null
+    },
+    {
+      "id": "product_share",
+      "title": "产品销售占比",
+      "chart_type": "pie",
+      "description": "各产品线/品类的销售额占比",
+      "dimension": "产品线/品类",
+      "metric": "销售额",
+      "data_source": null
+    },
+    {
+      "id": "sales_funnel",
+      "title": "销售转化漏斗",
+      "chart_type": "funnel",
+      "description": "从线索到成交的转化漏斗",
+      "stages": ["线索", "意向客户", "商机", "报价", "赢单"],
+      "metric": "数量",
+      "data_source": null
+    },
+    {
+      "id": "channel_share",
+      "title": "渠道贡献占比",
+      "chart_type": "doughnut",
+      "description": "各销售渠道的业绩贡献比例",
+      "dimension": "渠道",
+      "metric": "销售额",
+      "data_source": null
+    },
+    {
+      "id": "top_sales",
+      "title": "销售排名 Top10",
+      "chart_type": "horizontal_bar",
+      "description": "按销售人员排名的业绩柱状图",
+      "x_axis": "销售额",
+      "y_axis": "销售人员",
+      "data_source": null
+    },
+    {
+      "id": "top_customers",
+      "title": "Top10 客户明细",
+      "chart_type": "table",
+      "description": "本期贡献最大的客户明细表",
+      "columns": ["排名", "客户名称", "销售额", "订单数", "客单价", "同比变化"],
+      "data_source": null
+    }
+  ]
+}
